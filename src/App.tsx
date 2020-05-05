@@ -1,6 +1,6 @@
 import './App.css';
 import { createComponent } from '@vue/composition-api';
-import HelloWorld from './components/HelloWorld';
+import HelloWorld from './components/demo3';
 import ImageLogo from './assets/logo.png';
 
 export default createComponent({
@@ -9,10 +9,7 @@ export default createComponent({
     return () => (
       <div id="app">
         <img alt="Vue" src={ImageLogo} />
-        <HelloWorld
-          msg="Welcome to Your Vue.js + TypeScript App"
-          eventClick={e => console.log('click', e.target)}
-        />
+        <HelloWorld />
       </div>
     );
   },
